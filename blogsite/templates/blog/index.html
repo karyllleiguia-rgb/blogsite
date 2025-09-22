@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Blog</title></head>
+<body>
+<h1>Posts</h1>
+<ul>
+  {% for p in posts %}
+    <li>{{ p.title }} — {{ p.created_at }}</li>
+  {% empty %}
+    <li>No posts yet</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
